@@ -106,7 +106,8 @@
     class="overflow-scroll pb-32"
     id= "sidebar"
     >
-    Drawer
+    <!-- Drawer -->
+    Menu
 
     <div class=" flex items-center">
         <CloseButton on:click={() => (drawerHidden = true)} class="mb-4 dark:text-white lg:hidden" />
@@ -124,7 +125,7 @@
             />
             <SidebarDropdownWrapper label="Articles">
               <SidebarItem
-                label= "Article 1"
+                label= "Library"
                 href={`/blog/2023-01-01`}
                 {spanClass}
                 on:click={toggleSide}
